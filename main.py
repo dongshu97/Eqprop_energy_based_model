@@ -284,7 +284,7 @@ if __name__ == '__main__':
         BASE_PATH, name = createPath(args)
 
         net.load_state_dict(torch.load(
-            r'C:\Users\CNRS-THALES\OneDrive\文档\Homeostasis_python\Eqprop_energy_based_model\DATA-0\2022-10-03\S-2\model_state_dict.pt'))  # the path of trained model
+            r'C:\..\...\model_state_dict.pt'))  # the path of trained model
         net.eval()
 
         test_error = test_supervised_ep(net, args, test_loader)
